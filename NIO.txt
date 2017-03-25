@@ -15,3 +15,11 @@ CH4
    
 3. FilterOutputSream/FilterInputSteam
    对传输过程中的字节流做一些处理, 如压缩/解压缩 加密/解密 改变字节流的顺序等
+   
+4. FileInputStream/FileOutputStream有性能问题, 没有缓冲
+   FileInputStream.read()和FileOutputStream.write()
+   的每一次调用都会调用到底层文件系统中的函数, 会导致IO缓慢.
+   
+5. BufferedInputStream/BufferedOutputStream 使用了java缓冲区缓解上述问题
+
+6. DataInputStream/DataOutputStream 提供了对于基本数据类型(integer/string)的输入输出流
