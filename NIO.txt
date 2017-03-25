@@ -2,3 +2,13 @@ CH1
 1. try-with-resources JDK-7
 
 =================================================
+CH3
+
+1. RandomAccessFile
+
+=================================================
+CH4
+
+1. FileInputStream FileOutputStream
+2. PipedInputStream PipedOutputStream 
+   communication between threads.
