@@ -12,3 +12,6 @@ CH4
 1. FileInputStream FileOutputStream
 2. PipedInputStream PipedOutputStream 
    communication between threads.
+   
+3. FilterOutputSream/FilterInputSteam
+   对传输过程中的字节流做一些处理, 如压缩/解压缩 加密/解密 改变字节流的顺序等
