@@ -33,3 +33,5 @@ CH4
 5. BufferedInputStream/BufferedOutputStream 使用了java缓冲区缓解上述问题
 
 6. DataInputStream/DataOutputStream 提供了对于基本数据类型(integer/string)的输入输出流
+
+7. Externalizable 通过让用户控制序列化和反序列化的细节, 提高了基于反射的序列化和反序列化的性能
