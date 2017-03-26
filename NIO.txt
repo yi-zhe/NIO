@@ -20,6 +20,13 @@ CH4
    FileInputStream.read()和FileOutputStream.write()
    的每一次调用都会调用到底层文件系统中的函数, 会导致IO缓慢.
    
+5. Java对象的序列化和反序列化
+   默认的
+       实现Serializable接口
+       writeObject不会序列化静态变量和显示声明为transient的实例变量
+   自定义的
+   扩展的(externalization)
+   
 5. BufferedInputStream/BufferedOutputStream 使用了java缓冲区缓解上述问题
 
 6. DataInputStream/DataOutputStream 提供了对于基本数据类型(integer/string)的输入输出流
