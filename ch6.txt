@@ -1,0 +1,8 @@
+1. NIO基于Buffer
+2. Buffer的四个属性
+   - 容量 buffer中存储数据项的总数
+   - 限制 从0开始计数, 第一个不能被读写的index
+   - 位置 从0开始计数, 下一个被读写的index
+   - mark 调用reset后position的位置
+   
+   0 <= mark <= position <= limit <= capacity
