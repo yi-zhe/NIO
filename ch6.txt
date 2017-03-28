@@ -27,3 +27,6 @@
    get(byte[] dst)
    get(byte[] dst, int offset, int length)
    进行批量操作
+   
+7. Direct Buffer效率更高, 但申请内存时更加昂贵.
+   当代码已经可以正常用Buffer工作时, 可以简单的替换为allocateDirect来使用Direct Buffer
