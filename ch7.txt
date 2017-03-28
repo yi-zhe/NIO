@@ -1,0 +1,6 @@
+1. Channel 代表了一个与硬件设备、文件、网络Socket、应用程序组件或其他能够进行读写的实体
+   的打开的连接
+   
+2. Channel
+     |-WritableByteChannel
+     |-ReadableByteChannel
