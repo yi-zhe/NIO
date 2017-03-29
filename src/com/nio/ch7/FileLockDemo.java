@@ -32,6 +32,7 @@ public class FileLockDemo {
 		} else {
 			query(fc);
 		}
+		raf.close();
 	}
 
 	private static void query(FileChannel fc) throws IOException {
@@ -58,7 +59,7 @@ public class FileLockDemo {
 	}
 
 	private static void update(FileChannel fc) throws IOException {
-		for (int i = 0; i < MAX_QUERIES; i++) {
+		for (int i = 0; i < MAX_UPDATES; i++) {
 			System.out.println("acquiring exclusive lock");
 			FileLock lock = fc.lock(0, RECLEN, false);
 			try {
