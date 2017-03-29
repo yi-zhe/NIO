@@ -20,3 +20,8 @@
    |-shared    允许多个进程读
    
    tryLock
+
+7. 将文件映射到内存
+
+    MappedByteBuffer buffer = FileChannel#map(mode, start, length)
+    没有unmap方法, 直到该buffer被GC或者应用程序终止
