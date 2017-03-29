@@ -14,3 +14,9 @@
    FileOutputStream#getChannel()是write only的
    
 5. Channel是线程安全的
+
+6. FileLock 从一个文件的特定位置开始, 有一个长度.
+   |-exclusive 只允许一个进程写
+   |-shared    允许多个进程读
+   
+   tryLock
