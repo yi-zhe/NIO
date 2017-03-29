@@ -4,3 +4,8 @@
 2. Channel
      |-WritableByteChannel
      |-ReadableByteChannel
+
+3. Scatter/Gather I/O
+   Vectored I/O
+
+   将多个Buffer中的数据写入到一个目的地、从Channel中读取的数据填充多个Buffer
