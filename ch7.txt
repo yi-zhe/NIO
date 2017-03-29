@@ -9,3 +9,8 @@
    Vectored I/O
 
    将多个Buffer中的数据写入到一个目的地、从Channel中读取的数据填充多个Buffer
+
+4. FileInputStream#getChannel() 是read only的
+   FileOutputStream#getChannel()是write only的
+   
+5. Channel是线程安全的
