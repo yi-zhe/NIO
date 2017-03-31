@@ -25,3 +25,6 @@
 
     MappedByteBuffer buffer = FileChannel#map(mode, start, length)
     没有unmap方法, 直到该buffer被GC或者应用程序终止
+
+8. DatagramChannel 既可以做服务端也可以做客户端
+   做服务端时需要绑定ip和端口
